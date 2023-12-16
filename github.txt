@@ -1,0 +1,74 @@
+
+------------GITHUB SETUP----------------
+
+Install git using https://git-scm.com/downloads
+
+goto cmd:  >git --version
+
+Create account on github.com and use same credentials to set git on cmd-
+
+1] To set git
+	>git config --global user.name "github_name"
+	>git config --global user.email "github_email"
+	
+2] To verify
+	>git config user.name
+	>git config user.email
+
+3] Create your own repository
+	A. Using command prompt
+		>mkdir/cd git-ditiss
+		>git init     (creates a hidden file with .git extension)
+		>git status   (to check status of repository)
+		>dir /ah      (to see hidden files also)
+		Create a text file and add it to 'git-ditiss' directory
+		>git log      (to check actions related to repository)
+		
+	B. Using github.com
+		Create new repository
+		Choose public mode
+		Add a readmefile
+		
+		Copy url of the repository
+		
+		On cmd -
+			>mkdir/cd repository
+			>git clone "paste the url here"
+			>git init
+			>git status
+		
+		OR
+		Private repository:
+		To clone a private repository, we need to create a Personal Access Token (PAT) on github.com
+		Our git clone command references this PAT
+		Then open Settings->Profile or type the URL https://github.com/settings/profile
+		Go to Developer Settings
+		Click on Personal access tokens -> Tokens (classic)
+		Click on Generate new token
+		Confirm access using password
+		Enter data about the token
+		Copy the generated token
+
+		
+		On cmd -
+			>mkdir/cd repository
+		To clone a repository, now we need to use syntax:
+			>git clone https://<Paste_token>@github.com/account/<repository> ..url of private repository
+			>git init
+			>git status		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
